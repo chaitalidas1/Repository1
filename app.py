@@ -1,6 +1,12 @@
-from flask import Flask, request, render_template_string
+#from flask import Flask, request, render_template_string
+import streamlit as st
 
-app = Flask(__name__)
+st.title("Upload a File")
+uploaded_file = st.file_uploader("Choose a file")
+if uploaded_file is not None:
+    st.success(f"Uploaded: {uploaded_file.name}")
+
+#app = Flask(__name__)
 
 # HTML for upload screen
 UPLOAD_FORM = """
