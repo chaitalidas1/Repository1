@@ -43,5 +43,5 @@ def upload():
     
     return f"File '{file.filename}' uploaded successfully!"
 
-if __name__ == '__main__':
-    app.run(debug=True)
+#if __name__ == '__main__':
+#   app.run(debug=True)
